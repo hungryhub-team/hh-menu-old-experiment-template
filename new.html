@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css"  href="./tailwind.css"> -->
+    <link rel="stylesheet" type="text/css" href="./custom-tailwind.css" />
+    <!-- <link rel="stylesheet" href="./dist/tailwind.css"> -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @page {
+        size: A5;
+      }
+      .logo {
+        height: 80px;
+      }
+      .text-red-dark {
+        color: #df252a;
+      }
+      .text-footer {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+      }
+      @font-face {
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local("Material Icons"), local("MaterialIcons-Regular"),
+          url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+          url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+          url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+      }
+      .material-icons {
+        font-family: "Material Icons";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 8.46px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: "liga";
+      }
+      .item-image {
+        position: relative;
+        display: inline-block;
+      }
+      .myId-badge {
+        position: absolute;
+        width: 24px;
+        right: 19px;
+        top: 232px;
+        background: white;
+        color: #df252a;
+        line-height: 24px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 15px;
+      }
+      .text-footer-icon {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+      }
+      .footer-page {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 58px);
+      }
+    </style>
+  </head>
+
+  <body class="A4">
+    <section class="sheet" style="padding: 29px">
+      <div class="flex">
+        <img
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/INDOSIAR_Logo.png/1200px-INDOSIAR_Logo.png"
+          alt=""
+        />
+        <div class="flex-grow text-center">
+          <h1 class="font-bold">4 Dishes Include Free Flow Mocktails</h1>
+          <h1 class="font-bold">Party Pack - 1290 THB Net/per Set</h1>
+          <span class="text-xs text-red-dark"
+            >*This Pack only for 4 people if add more gonna charge 300 THB /
+            person*</span
+          >
+        </div>
+        <img
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/INDOSIAR_Logo.png/1200px-INDOSIAR_Logo.png"
+          alt=""
+        />
+      </div>
+
+      <!-- title -->
+      <div class="relative flex items-center text-center h-[50px] mb-4">
+        <div
+          class="absolute z-20 inline-block px-4 text-center -translate-x-1/2 bg-white left-1/2"
+        >
+          <div class="text-lg font-bold text-red-dark">MAIN DIST</div>
+          <div class="text-xs">(CHOOSE 1 DISH)</div>
+          <div class="text-red-dark text-2xs" style="margin-top: 5px">
+            *Main course come with fries*
+          </div>
+        </div>
+        <div style="height: 1px" class="w-full bg-black"></div>
+      </div>
+
+      <div class="flex text-2xs" style="margin-top: 30px">
+        <!-- column 1 -->
+        <div class="mr-8">
+          <div class="item-image">
+            <span class="myId-badge">1</span>
+            <img
+              style="width: 274px"
+              src="http://journeymangallery.com/wp-content/uploads/galleries/post-2650/Josh%20Manring%20Decor%20Wall%20Art%201x1%20Ratio-12.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- title -->
+      <div
+        class="relative flex items-center text-center h-[50px] mb-4"
+        style="margin-top: 30px"
+      >
+        <div
+          class="absolute z-20 inline-block px-4 text-center -translate-x-1/2 bg-white left-1/2"
+        >
+          <div class="text-lg font-bold text-red-dark">MAIN DIST</div>
+          <div class="text-xs">(CHOOSE 1 DISH)</div>
+          <div class="text-red-dark text-2xs" style="margin-top: 5px">
+            *Main course come with fries*
+          </div>
+        </div>
+        <div style="height: 1px" class="w-full bg-black"></div>
+      </div>
+      <div class="flex text-2xs" style="margin-top: 30px; margin-bottom: 30px">
+        <!-- column 1 -->
+        <div class="mr-8">
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex font-bold">
+              <!-- menu name -->
+              <div class="flex-grow leading-6">
+                1. BAKED PORK CHOP ON THE BONE
+              </div>
+              <!-- menu price -->
+              <div>400</div>
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
+              sed atque, sit dicta itaque at deserunt, inventore suscipit ipsam,
+              ex asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+              velit.
+            </div>
+          </div>
+        </div>
+        <!-- column 2 -->
+        <div>
+          <div class="flex font-bold">
+            <!-- menu name -->
+            <div class="flex-grow mr-4">1. BAKED PORK CHOP ON THE BONE</div>
+            <!-- menu price -->
+            <div>400</div>
+          </div>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sed
+            atque, sit dicta itaque at deserunt, inventore suscipit ipsam, ex
+            asperiores. Nobis quidem dolorum illo, in eaque asperiores eum
+            velit.
+          </div>
+        </div>
+      </div>
+      <div class="footer-page">
+        <div class="flex" style="justify-content: center">
+          <div style="margin-right: 11px">
+            <span style="vertical-align: middle" class="material-icons">
+              stars
+            </span>
+            <span style="vertical-align: middle" class="text-footer-icon">
+              Popular
+            </span>
+          </div>
+          <div style="margin-right: 11px">
+            <span style="vertical-align: middle" class="material-icons">
+              info
+            </span>
+            <span style="vertical-align: middle" class="text-footer-icon">
+              Chef Recommended
+            </span>
+          </div>
+          <div style="margin-right: 11px">
+            <span style="vertical-align: middle" class="material-icons">
+              thumb_up
+            </span>
+            <span style="vertical-align: middle" class="text-footer-icon">
+              Vegetarian
+            </span>
+          </div>
+          <div>
+            <span style="vertical-align: middle" class="material-icons">
+              watch_later
+            </span>
+            <span style="vertical-align: middle" class="text-footer-icon">
+              Please allow 20-30 mins for Prearation
+            </span>
+          </div>
+        </div>
+        <div style="height: 1px" class="w-full bg-black"></div>
+        <div class="text-footer">
+          - Price is inclusive of VAT and service charge | Exclusive offer
+          brought to you by Hungry Hub -
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
